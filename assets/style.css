@@ -13,7 +13,7 @@ nav {
   justify-content: space-between;
   padding: 20px;
   color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 255, 0.225);
+  background-color: transparent;
 }
 .couleur {
   color: rgb(148, 137, 137);
@@ -46,4 +46,12 @@ ul :hover a {
 a {
   text-decoration: none;
   color: rgb(148, 137, 137);
+}
+header {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(rgba(9, 0, 77, 0.65), rgba(9, 0, 77, 0.65));
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
