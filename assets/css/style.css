@@ -50,11 +50,12 @@ a {
   text-decoration: none;
   color: aliceblue;
 }
+
 header {
   width: 100%;
   height: 100vh;
   background-image: linear-gradient(rgba(9, 0, 77, 0.65), rgba(9, 0, 77, 0.65)),
-    url(photo/couverture.jpg);
+    url(../photo/couverture.jpg);
   background-position: bottom;
   background-size: cover;
   display: flex;
@@ -203,12 +204,13 @@ section .about-us {
 .description2 {
   background-color: rgb(103, 121, 102);
 
-  height: 29vh;
+  height: 30vh;
 }
+
 .section-type h2 {
   color: red;
   text-align: center;
-  margin-top: 10px;
+  padding-top: 10px;
   margin-bottom: 30px;
 }
 .section-type p {
@@ -263,6 +265,13 @@ footer {
 .Fabrication a {
   color: aliceblue;
   text-decoration: none;
+}
+
+.second-section img {
+  transition: transform 0.5s ease-in-out;
+}
+.second-section img:hover {
+  transform: scale(1.02);
 }
 
 .footer-conteint .adress {
