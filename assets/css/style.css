@@ -4,6 +4,9 @@
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
+:root {
+  scroll-behavior: smooth;
+}
 nav {
   position: fixed;
   top: 0;
@@ -14,7 +17,7 @@ nav {
   justify-content: space-between;
   padding: 20px;
   color: rgb(0, 0, 0);
-  background-color: rgb(81, 166, 77);
+  background-color: #5483d3;
 }
 .logo {
   height: 60px;
@@ -104,7 +107,7 @@ span {
   font-size: 15px;
   padding: 10px 30px;
   border-radius: 20px;
-  background: rgb(230, 28, 28);
+  background: #052659;
   border: 0;
   outline: 0;
   cursor: pointer;
@@ -112,7 +115,7 @@ span {
 }
 .bouton {
   padding: 8px 20px;
-  background-color: rgb(21, 148, 14);
+  background-color: #5483d3;
   border-radius: 20px;
   color: aliceblue;
   margin-top: 30px;
@@ -124,7 +127,7 @@ section {
 }
 section .about-us {
   text-align: center;
-  color: rgb(21, 148, 14);
+  color: #052659;
   margin-bottom: 10px;
   font-size: 4vmin;
 }
@@ -138,7 +141,7 @@ section .about-us {
 }
 .section-one h1 {
   margin-top: 50px;
-  color: red;
+  color: #7da0ca;
   text-align: center;
 }
 .section-one p {
@@ -149,8 +152,9 @@ section .about-us {
 }
 
 .about-left {
-  background-color: rgb(103, 121, 102);
+  background-color: #052659;
   width: 25%;
+  height: 35vh;
 }
 .cars img {
   width: 50vw;
@@ -158,12 +162,13 @@ section .about-us {
   object-fit: cover;
 }
 .about-right {
-  background-color: rgb(103, 121, 102);
+  background-color: #052659;
+  height: 35vh;
   width: 25%;
 }
 .category {
   text-align: center;
-  color: rgb(21, 148, 14);
+  color: #052659;
   margin-bottom: 10px;
   font-size: 4vmin;
 }
@@ -173,12 +178,18 @@ section .about-us {
   gap: 6px;
   justify-content: space-between;
 }
+.second-section img {
+  transition: transform 0.5s ease-in-out;
+}
+.second-section img:hover {
+  transform: scale(1.02);
+}
 .section-speed {
   display: flex;
   flex-direction: column;
 }
 .section-speed h2 {
-  color: red;
+  color: #1b2f48;
   text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -198,17 +209,17 @@ section .about-us {
   object-fit: cover;
 }
 .description {
-  background-color: rgb(103, 121, 102);
+  background-color: #0527598e;
   height: 30vh;
 }
 .description2 {
-  background-color: rgb(103, 121, 102);
+  background-color: #0527598e;
 
   height: 30vh;
 }
 
 .section-type h2 {
-  color: red;
+  color: #1b2f48;
   text-align: center;
   padding-top: 10px;
   margin-bottom: 30px;
@@ -235,61 +246,57 @@ section .about-us {
   object-fit: cover;
 }
 footer {
+  bottom: 0px;
   width: 100%;
-  height: 20vw;
-  margin-top: 40px;
-  background-color: rgb(39, 37, 37);
+  background: #111;
+  margin-top: 100px;
 }
-.footer-conteint {
+.footer-content {
   display: flex;
-  flex-direction: row;
-
-  gap: 3px;
 }
-.footer-conteint .Fabrication {
-  width: 40%;
+.footer-content h2 {
+  color: aliceblue;
+}
+.footer-content p {
+  color: aliceblue;
+}
+.footer-content .box {
+  flex-basis: 50%;
+  padding: 10px 20px;
+}
+.box h2 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.box .content {
+  margin: 20px 0 0 0;
+}
+.left .content .social {
+  margin: 20px 0 0 0;
+}
+.left .content p {
+  text-align: justify;
+  color: aliceblue;
+}
+
+.left .content .social a {
+  padding: 0 2px;
+}
+.left .content .social a span {
+  height: 40px;
+  width: 40px;
+  background: #1a1a1a;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+}
+.text {
+  color: aliceblue;
+}
+.bottone button {
+  width: 50px;
   height: 30px;
-}
-.Fabrication h3 {
-  text-align: center;
-  color: aliceblue;
-  margin-bottom: 20px;
-  margin-top: 10px;
-}
-.Fabrication li {
-  margin: 0 30px;
-}
-.Fabrication ul {
-  list-style: none;
-}
-.Fabrication a {
-  color: aliceblue;
-  text-decoration: none;
-}
-
-.second-section img {
-  transition: transform 0.5s ease-in-out;
-}
-.second-section img:hover {
-  transform: scale(1.02);
-}
-
-.footer-conteint .adress {
-  width: 40%;
-  height: 30px;
-}
-.adress h3 {
-  text-align: center;
-  color: aliceblue;
-  margin-bottom: 30px;
-  margin-top: 10px;
-}
-.footer-conteint .contact {
-  width: 60%;
-}
-.contact h3 {
-  text-align: center;
-  color: aliceblue;
-  margin-bottom: 20px;
-  margin-top: 10px;
+  border-radius: 10px;
 }
